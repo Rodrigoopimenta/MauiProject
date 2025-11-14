@@ -19,11 +19,16 @@ namespace AppMAUIGallery.Repository
                 Name = "Layout",
                 Components = new List<Models.Component>
                 {
-                    new Models.Component { 
-                        Title = "StackLayout", 
-                        Description = "Organização sequencial dos elementos", 
-                        Page = typeof(StackLayoutPage) 
+                    new Models.Component {
+                        Title = "StackLayout",
+                        Description = "Organização sequencial dos elementos",
+                        Page = typeof(StackLayoutPage)
                     },
+                    new Models.Component {
+                        Title = "Grid",
+                        Description = "Organização os elementos dentro de uma tabela",
+                        Page = typeof(GridLayoutPage)
+                    }
                 }
             });
             return categories;
