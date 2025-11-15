@@ -5,7 +5,13 @@
              Title="GridLayoutPage">
 
 
-    <Grid BackgroundColor="AliceBlue" Margin="20">
+    <Grid BackgroundColor="AliceBlue" Margin="20" 
+          ColumnDefinitions="6*,Auto,2*,2*"
+          RowDefinitions="50,100,10"
+          RowSpacing="1"
+          ColumnSpacing="1">
+        <!--
+        definindo de maneira verbosa
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="Auto"/>
@@ -17,7 +23,7 @@
             <RowDefinition Height="100"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-
+        -->
         <BoxView Color="MediumAquamarine"/>
         <Label Text="Olá Mundo!" />
 
