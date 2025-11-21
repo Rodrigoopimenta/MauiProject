@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AppMAUIGallery.Views.Layouts.FlexLayoutPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="FlexLayoutPage">
+    <FlexLayout
+        AlignItems="Start"
+        Direction="Column"
+        JustifyContent="SpaceBetween">
+        <Label
+            Padding="10"
+            BackgroundColor="RosyBrown"
+            FlexLayout.Order="1"
+            Text="Linha 1" />
+        <Label
+            Padding="10"
+            BackgroundColor="SandyBrown"
+            FlexLayout.AlignSelf="Center"
+            FlexLayout.Order="0"
+            Text="Linha 2" />
+        <Label
+            Padding="10"
+            BackgroundColor="SaddleBrown"
+            FlexLayout.AlignSelf="End"
+            FlexLayout.Order="3"
+            Text="Linha 3" />
+        <Label
+            Padding="10"
+            BackgroundColor="Brown"
+            FlexLayout.AlignSelf="Stretch"
+            FlexLayout.Order="2"
+            Text="Linha 4" />
+    </FlexLayout>
+</ContentPage>
